@@ -9,7 +9,11 @@ SENTRY_DSN = ''
 # logging
 LOG_FILE = 'drain.log'
 LOG_LEVEL = 'INFO'
-LOG_FORMAT = '%(levelname)s %(asctime)s %(module)s %(process)d %(thread)d %(message)s'
+LOG_FORMAT = (
+    '%(levelname)s %(asctime)s '
+    '%(module)s %(process)d '
+    '%(thread)d %(message)s'
+)
 
 # database
 DATABASE_ENGINE = 'peewee.SqliteDatabase'

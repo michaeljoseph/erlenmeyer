@@ -30,13 +30,14 @@ class DrainTestCase(TestCase):
 
 class ViewTestCase(DrainTestCase):
     def test_index(self):
-        result = self.app.get('/') 
+        result = self.app.get('/')
         self.assertEqual(200, result.status_code)
         self.assertEqual('Hello drain!', result.data)
 
 
 class ModelTestCase(DrainTestCase):
     pass
+
 
 class ApiTestCase(DrainTestCase):
     def test_publish_endpoint(self):
@@ -46,6 +47,7 @@ class ApiTestCase(DrainTestCase):
             json.loads(response.data),
             app.config['API_RESPONSE']
         )
+
 
 class CliTestCase(DrainTestCase):
     def setUp(self):

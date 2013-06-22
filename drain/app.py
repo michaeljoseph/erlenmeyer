@@ -1,4 +1,4 @@
-from thing import Erlenmeyer
+from extension import Erlenmeyer
 from flask import Flask
 
 import settings
