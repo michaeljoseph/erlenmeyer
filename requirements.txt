@@ -1,0 +1,11 @@
+Flask==0.10
+blinker==1.2
+docopt==0.6.1
+unittest2==0.5.1
+mock==1.0.1
+nose-progressive==1.5
+raven==3.3.7
+requests==1.2.3
+flask-peewee==0.6.5
+Flask-Social==1.6.0
+Flask-Bootstrap==2.3.1-1
