@@ -12,10 +12,10 @@ from cli import an_example_cli
 class DrainTestCase(TestCase):
     def setUp(self):
         app.config['TESTING'] = True
-        #app.template_folder='drain'
+        #app.template_folder='erlenmeyer'
         #print(app.template_folder)
         self.app = app.test_client()
-        self.app.template_folder = 'drain'
+        self.app.template_folder = 'erlenmeyer'
 
         #self.models = [
             #User, Offerer, Bidder,
@@ -32,7 +32,7 @@ class ViewTestCase(DrainTestCase):
     def test_index(self):
         result = self.app.get('/')
         self.assertEqual(200, result.status_code)
-        self.assertEqual('Hello drain!', result.data)
+        self.assertEqual('Hello erlenmeyer!', result.data)
 
 
 class ModelTestCase(DrainTestCase):
@@ -52,7 +52,7 @@ class ApiTestCase(DrainTestCase):
 class CliTestCase(DrainTestCase):
     def setUp(self):
         super(CliTestCase, self).setUp()
-        self.requests_patcher = patch('drain.cli.requests')
+        self.requests_patcher = patch('erlenmeyer.cli.requests')
         self.requests = self.requests_patcher.start()
         self.response = Mock(spec=requests.Response, status_code=200)
 

@@ -1,14 +1,14 @@
 from setuptools import setup
-import drain
+import erlenmeyer
 
 setup(
-    name=drain.__name__,
-    version=drain.__version__,
-    description=drain.__doc__,
+    name=erlenmeyer.__name__,
+    version=erlenmeyer.__version__,
+    description=erlenmeyer.__doc__,
     author='Michael Joseph',
     author_email='michaeljoseph@gmail.com',
-    url='http://github.com/michaeljoseph/drain',
-    packages=['drain'],
+    url='http://github.com/michaeljoseph/erlenmeyer',
+    packages=['erlenmeyer'],
     install_requires=open('requirements.txt').readlines(),
     test_suite='nose.collector',
     extras_require = {

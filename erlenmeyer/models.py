@@ -1,6 +1,6 @@
 from peewee import *
 
-from drain.app import db
+from erlenmeyer.app import db
 
 
 class User(Model, BaseUser):

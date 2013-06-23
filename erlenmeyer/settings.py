@@ -7,7 +7,7 @@ EXTERNAL_API_URL = 'http://httpbin.org/get'
 SENTRY_DSN = ''
 
 # logging
-LOG_FILE = 'drain.log'
+LOG_FILE = 'erlenmeyer.log'
 LOG_LEVEL = 'INFO'
 LOG_FORMAT = (
     '%(levelname)s %(asctime)s '
@@ -17,7 +17,7 @@ LOG_FORMAT = (
 
 # database
 DATABASE_ENGINE = 'peewee.SqliteDatabase'
-DATABASE_NAME = 'drain.db'
+DATABASE_NAME = 'erlenmeyer.db'
 DATABASE = {
     'name': DATABASE_NAME,
     'engine': DATABASE_ENGINE
