@@ -1,6 +1,7 @@
 import logging
 
 from flask import g
+from flask_debugtoolbar import DebugToolbarExtension
 from flask_peewee.auth import Auth
 from flask_peewee.admin import Admin
 from flask_peewee.db import Database
@@ -84,3 +85,4 @@ class Erlenmeyer(object):
         setup_logging(app, settings)
         setup_sentry(app, settings)
         self.database = setup_database(app, settings)
+        self.toolbar = DebugToolbarExtension(app) if app.debug else None

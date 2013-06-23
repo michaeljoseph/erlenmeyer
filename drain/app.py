@@ -4,7 +4,9 @@ from flask import Flask
 import settings
 
 app = Flask('drain')
-database = Erlenmeyer(app, settings).database
+erlenmeyer = Erlenmeyer(app, settings)
+database = erlenmeyer.database
+toolbar = erlenmeyer.toolbar
 
 import views
 import api
