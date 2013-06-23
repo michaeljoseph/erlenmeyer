@@ -62,11 +62,11 @@ Run the tests with:
 
 Run the development server with:
 
-    python -m drain
+    python -m erlenmeyer
 
 Run the linting (pep8, pyflakes) with:
 
-    flake8 drain 
+    flake8 erlenmeyer 
 
 ## API documentation ##
 

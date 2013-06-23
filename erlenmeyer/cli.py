@@ -1,10 +1,10 @@
 """
-drain
+erlenmeyer
 Do a thing from the command line
 
 Usage:
-  drain [options] <an_identifier>
-  drain --version
+  erlenmeyer [options] <an_identifier>
+  erlenmeyer --version
 
 Options:
   -v --verbose                 Show debug output.
