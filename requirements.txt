@@ -1,9 +1,15 @@
 Flask==0.10
 blinker==1.2
 docopt==0.6.1
+
 unittest2==0.5.1
 mock==1.0.1
-nose-progressive==1.5
+
+pinocchio==0.3.1
+nosexcover==1.0.7
+flake8==2.0.0
+coverage==3.5.2
+
 raven==3.3.7
 requests==1.2.3
 flask-peewee==0.6.5
