@@ -6,6 +6,7 @@
 * Logging
 * API (simple)
 * CLI (with [docopt](http://dotopt.org))
+  * http://flask-script.readthedocs.org/en/latest/
 * Templates (todo)
   * [bootstrap](http://twitter.github.io/bootstrap/)
   * https://github.com/mbr/flask-bootstrap
@@ -24,6 +25,12 @@
   * http://www.sqlite.org/draft/wal.html
   * http://stackoverflow.com/questions/913067/sqlite-as-a-production-database-for-a-low-traffic-site
 
+* Admin interface (fllask-peewee, 
+
+http://elsdoerfer.name/docs/flask-assets/
+http://pythonhosted.org/Flask-Cache/
+http://sjl.bitbucket.org/flask-lesscss/
+
 * [flask-peewee](https://github.com/coleifer/flask-peewee)
 * User auth
   * https://github.com/mattupstate/flask-social
@@ -34,26 +41,35 @@
   * http://flask.pocoo.org/docs/patterns/celery/
 * Sentry (link)
 
+* One file example
+* Monolithic app example
+* Blueprint example
+  https://gist.github.com/coleifer/3bee9ad91aea3b56b11c
+
 ## Usage
 
 Have a look at the [example project]()
 
 ## Development
 
-    # clone the repo
-    # virtualenv, install requirements
-    # nosetests
+Install the development requirements (in a virtualenv, after cloning the repo:
 
-## TODO
+    pip install -r development.txt
 
-* pinned requirements in setup, relative requirements in requirements.txt
-* statsd
-* new relic
-* google analytics
-* complete testing story
-* pedantic
-  * Linting
-  * Testing (http://peewee.readthedocs.org/en/latest/peewee/playhouse.html#test-utils)
-  * Sphinx docs
-* database migrations
-* API: flask-peewee, flask model views
+Run the tests with:
+
+    nosetests
+
+Run the development server with:
+
+    python -m drain
+
+Run the linting (pep8, pyflakes) with:
+
+    flake8 drain 
+
+## API documentation ##
+
+To generate the documentation:
+
+    cd docs && PYTHONPATH=.. make singlehtml
