@@ -22,3 +22,17 @@ paver
 - collectstatic
 - asset compression and minification
 - less
+
+ORDER
+
+## 0.0.2
+* name change
+* models
+* todo app with bootstrap
+
+## 0.0.3
+* heroku
+* logins / flask-social
+
+## 0.0.4
+* flask-peewee admin interface or 
