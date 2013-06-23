@@ -1,0 +1,4 @@
+-r requirements.txt
+
+Flask-DebugToolbar==0.8.0
+sphinx-bootstrap-theme==0.2.3
